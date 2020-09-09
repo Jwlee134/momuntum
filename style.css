@@ -1,0 +1,86 @@
+body {
+  background-color: #a3d2ca;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.js-clock {
+  margin-top: 100px;
+  font-size: 60px;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+  height: 50px;
+  margin: 0;
+}
+.js-form {
+  height: 50px;
+}
+.js-toDoForm {
+  margin-top: 20px;
+}
+form,
+.js-greeting {
+  text-align: center;
+}
+input {
+  color: white;
+  border: none;
+  width: 220px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+input:focus {
+  outline: none;
+  color: white;
+  text-align: center;
+}
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+.form,
+.greeting {
+  display: none;
+}
+.showing {
+  display: block;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+li {
+  margin-bottom: 5px;
+}
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+ul {
+  width: 210px;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.js-weather {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
