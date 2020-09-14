@@ -43,7 +43,9 @@ function submitToDo() {
   event.preventDefault();
   const toDoValue = toDoInput.value;
   toDoInput.value = "";
-  makeList(toDoValue);
+  if (toDoValue) {
+    makeList(toDoValue);
+  }
 }
 
 function init() {

@@ -1,11 +1,10 @@
-function genNum() {
-  const randomNum = Math.floor(Math.random() * 15 + 1);
+function showImg() {
   const img = new Image();
-  img.src = `img/${randomNum}.jpg`;
+  img.src = `https://source.unsplash.com/1600x900/?nature,landscape`;
   document.body.appendChild(img);
 }
 
 function init() {
-  genNum();
+  showImg();
 }
 init();
