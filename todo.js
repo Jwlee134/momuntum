@@ -32,6 +32,7 @@ function makeList(text) {
     id: newId,
   };
   toDos.push(toDoObj);
+  li.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
   saveToDo();
 }
 
