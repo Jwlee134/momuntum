@@ -1,10 +1,9 @@
-const toDoForm = document.querySelector(`.js-toDoForm`),
-  toDoInput = toDoForm.querySelector(`input`),
+const toDoInput = toDoForm.querySelector(`input`),
   toDoList = document.querySelector(`.js-toDoList`);
 
 let toDos = [];
 
-function removeToDo() {
+function removeToDo(event) {
   const btn = event.target,
     li = btn.parentNode;
   toDoList.removeChild(li);
@@ -19,7 +18,7 @@ function makeList(text) {
   const li = document.createElement(`li`),
     span = document.createElement(`span`),
     delbtn = document.createElement(`button`),
-    newId = toDos.length + 1;
+    newId = Math.floor(Math.random() * 1000000000);
   li.appendChild(span);
   li.appendChild(delbtn);
   li.id = newId;
@@ -40,7 +39,7 @@ function saveToDo() {
   localStorage.setItem(`toDo`, JSON.stringify(toDos));
 }
 
-function submitToDo() {
+function submitToDo(event) {
   event.preventDefault();
   const toDoValue = toDoInput.value;
   toDoInput.value = "";
