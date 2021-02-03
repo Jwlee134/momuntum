@@ -1,2 +1,1 @@
-# vanilla-js
- 
+# 바닐라JS 기초
